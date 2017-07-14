@@ -817,7 +817,7 @@ int32 OS_TaskCreate (uint32 *task_id, const char *task_name, osal_task_entry fun
        */
        memset(&priority_holder, 0, sizeof(priority_holder));
        priority_holder.sched_priority = os_priority;
-       ret = pthread_attr_setschedparam(&custom_attr,&priority_holder);
+       ret = 0; /*pthread_attr_setschedparam(&custom_attr,&priority_holder);*/
        if(ret !=0)
        {
           #ifdef OS_DEBUG_PRINTF
