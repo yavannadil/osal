@@ -804,6 +804,7 @@ int32 OS_TaskCreate (uint32 *task_id, const char *task_name, osal_task_entry fun
        ** Set the scheduling policy 
        ** On Linux, the schedpolity must be SCHED_FIFO or SCHED_RR to set the priorty
        */
+/*
        if (pthread_attr_setschedpolicy(&custom_attr, SCHED_FIFO))
        {
           #ifdef OS_DEBUG_PRINTF
@@ -811,7 +812,7 @@ int32 OS_TaskCreate (uint32 *task_id, const char *task_name, osal_task_entry fun
           #endif
           return(OS_ERROR);
        }
-
+*/
        /* 
        ** Set priority 
        */
