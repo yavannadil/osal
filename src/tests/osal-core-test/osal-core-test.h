@@ -227,7 +227,7 @@ uint32 mutex_id;
 
 uint32 shared_resource_x;
 
-#define MSGQ_DEPTH        50
+#define MSGQ_DEPTH        10
 #define MSGQ_SIZE         4
 
 #define PASS              0

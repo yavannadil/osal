@@ -192,7 +192,7 @@
 ** affect the overall OSAL memory footprint so it may be beneficial to set this limit according to
 ** what the application actually needs.
 */
-#define OS_QUEUE_MAX_DEPTH    50
+#define OS_QUEUE_MAX_DEPTH    10
 
 /*
  * If OS_DEBUG_PRINTF is defined, this will enable the "OS_DEBUG" statements in the code
